@@ -1,0 +1,40 @@
+body {
+  background-color: #f0f0f0;
+  /* Change this to your desired background color */
+}
+
+.subject {
+  color: #1976d2;
+  font-size: 16px;
+  font-weight: bold !important;
+}
+
+.table-headers-span {
+  font-family: 'Heebo' !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #0d2c6d !important;
+  text-align: center !important;
+  border-right: 1px solid #cccccc5e !important;
+}
+
+.table-headers {
+  background-color: #f3f6f9 !important;
+}
+
+.table-cell{
+ height: 20px!important;
+ padding: '6px 16px' !important
+}
+
+.divider{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+.test{
+  color: #2a7ed12f;
+}
+
+.test{
+  color: rgba(105, 99, 99, 0.15);
+}

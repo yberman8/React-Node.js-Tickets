@@ -1,0 +1,43 @@
+.container {
+    margin-top: 90px;
+    margin-bottom: 70px;
+  }
+  
+  .card {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    padding: 24px; /* Assuming theme.spacing(3) is 24px */
+  }
+  
+  .logo {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .textField {
+    margin-bottom: 18px !important; /* Assuming theme.spacing(2) is 16px */
+  }
+  
+  .button {
+    font-weight: bold;
+    font-size: 25px;
+    height: 48px;
+  }
+  
+  .button:hover {
+    background-color: #0a1e48;
+  }
+  
+  .link {
+    color: #0d2c6d;
+    cursor: pointer;
+    margin-bottom: 30px !important;
+  }
+  
+  .borderSt{
+    border: 5px solid #0d2c6d;
+
+  }
