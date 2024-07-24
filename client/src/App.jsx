@@ -38,8 +38,8 @@ function App() {
             <SnackbarProvider>
               <SocketProvider>
               <SnackbarComponent />
-              <Router basename="/ticketsTest">
-              {/* <Router> */}
+              {/* <Router basename="/ticketsTest"> */}
+              <Router>
                 <AuthProvider>
                   <NavBar/>
                   <AppRoutes/>
