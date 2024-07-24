@@ -1,4 +1,4 @@
-React + Vite + Node.js Service Ticket System
+# React + Vite + Node.js Service Ticket System
 
 This project is a full-featured service ticket system that allows customers to create service tickets and engage in a conversation with customer service representatives. The system also supports real-time notifications and email-based replies, enhancing customer support efficiency and responsiveness.
 
