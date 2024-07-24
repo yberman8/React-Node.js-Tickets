@@ -25,7 +25,7 @@ class Token {
     static async sendVerificationEmail(email, verificationCode) {
 
         let  details = {
-            from: '"ClickCall Calling-Card" <support@clickcall.co.il>',  // Updated 'from' field
+            from: process.env.EMAIL_USER,  // Updated 'from' field
             to: email,
             subject: 'קליקול מערכת פניות - קוד אימות',
             html: `<div style="direction: rtl"><span>קוד האימות שלך הוא: </span><span style="font-weight: bold">${verificationCode}</span></div><div style="direction: rtl"><span>הקוד תקף ל5 דקות בלבד</span></div>`,
@@ -34,8 +34,8 @@ class Token {
         let transformMail = nodeMailer.createTransport({
             service: "gmail",
             auth: {
-                user: "support@clickcall.co.il",
-                pass: process.env.EMAIL_PASSWORD2
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASSWORD
             },
             connectionTimeout: 6000,
         });

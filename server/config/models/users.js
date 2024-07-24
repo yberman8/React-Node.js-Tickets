@@ -67,10 +67,10 @@ export default Users;
 
 
 function generateRandomToken() {
-  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!';
+  const chars = 'abcdefghkmnopqrstuvwxyz023456789abcdefghkmnopqrstuvwxyz';
   let tokenAPI = '';
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 40; i++) {
     const randomIndex = Math.floor(Math.random() * chars.length);
     tokenAPI += chars.charAt(randomIndex);
   }

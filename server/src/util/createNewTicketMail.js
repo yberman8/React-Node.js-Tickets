@@ -7,7 +7,7 @@ class CreateNewTicketMail {
   static async sendEmail(ticket) {
 
     const mailOptions = {
-      from: 'reskosher@gmail.com',
+      from: process.env.EMAIL_USER,
       to: ticket.email,
       subject: ticket.email_subject,
       html: `<div style="direction: rtl"><span>הפנייה נוצרה בהצלחה!, תוכן ההודעה:</span><br><span>${ticket.responses[0].message}</span></div>`,
@@ -17,7 +17,7 @@ class CreateNewTicketMail {
     let transformMail = nodeMailer.createTransport({
       service: "gmail",
       auth: {
-        user: "reskosher@gmail.com",
+        user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASSWORD
       },
       connectionTimeout: 6000,

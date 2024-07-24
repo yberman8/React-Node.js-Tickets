@@ -17,13 +17,8 @@ export const initializeSocket = (server) => {
         try {
           let decodeToken = jwt.verify(token, process.env.SECRET_WORD);
           let userId = decodeToken._id;
-          const user = await Users.findById(userId);
+          socket.join(userId); // Each user gets their own room
 
-          if (user.role === 'admin') {
-            socket.join(adminRoom);
-          } else {
-            socket.join(userId); // Each user gets their own room
-          }
         } catch (error) {
           console.log('Error handling joinRoom event:', error);
         }
