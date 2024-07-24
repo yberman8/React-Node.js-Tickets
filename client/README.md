@@ -24,57 +24,39 @@ MongoDB
 Installation
 Clone the repository:
 
-sh
-Copy code
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
-Install dependencies:
+download the project;
 
-sh
-Copy code
 # For the frontend
-cd frontend
+cd client
 npm install
-# or
-yarn install
 
-# For the backend
-cd ../backend
-npm install
-# or
-yarn install
 Set up environment variables:
 Create a .env file in the backend directory and add the following:
 
-env
-Copy code
-PORT=5000
-MONGO_URI=your_mongo_uri
-JWT_SECRET=your_jwt_secret
-Run the development servers:
+VITE_BASE_URL='http://localhost:3000'
 
-sh
-Copy code
+# For the backend
+cd ../server
+npm install
+
+Set up environment variables:
+Create a .env file in the backend directory and add the following:
+
+SECRET_WORD="my_tickets_project"
+PORT="3000"
+EMAIL_USER="ticketstest@gmail.com"
+EMAIL_PASSWORD=eherr979erhereerh
+
+
+Run the servers:
 # In the backend directory
-npm run dev
-# or
-yarn dev
+npm start
 
 # In the frontend directory
 cd ../frontend
 npm run dev
-# or
-yarn dev
-Available Scripts
-In the project directory, you can run the following scripts:
 
-Frontend
-npm run dev or yarn dev: Runs the app in development mode with Vite.
-npm run build or yarn build: Builds the app for production.
-npm run lint or yarn lint: Runs ESLint to lint the codebase.
-Backend
-npm run dev or yarn dev: Runs the server in development mode with nodemon.
-npm run start or yarn start: Starts the server in production mode.
+
 Plugins
 This project uses the following official Vite plugins:
 
